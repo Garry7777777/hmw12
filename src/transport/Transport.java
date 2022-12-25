@@ -1,17 +1,9 @@
 package transport;
 
-public abstract class Transport {
+public abstract class Transport implements Competitive{
     protected final String brand;
     protected final String model;
     protected float engineVolume;
-
-/*
-    protected final int productionYear;
-    protected final String productionCountry;
-    protected String color;
-    protected int maxSpeed;
-*/
-
     public Transport(String brand, String model, float engineVolume) {
 
         if (brand == null) this.brand = "default";

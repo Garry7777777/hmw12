@@ -20,8 +20,8 @@ public class Main {
 
         Bus busLiaz = new Bus("ЛИАЗ", "677", 10f);
         Bus busIcarus = new Bus("Icarus", "280", 20f);
-        Bus busPaz = new Bus("ПАЗ", "Горбатый", 5f);
-        Bus busMers = new Bus("Мерседес", "Люкс", 30f);
+        Bus busPaz = new Bus("ПАЗ", " Горбатый", 5f);
+        Bus busMers = new Bus("Мерседес", " Люкс", 30f);
 
         System.out.println(busLiaz);
         System.out.println(busIcarus);
@@ -42,6 +42,8 @@ public class Main {
 
         trucksMaz.startMoving();
         busPaz.endMoving();
+        carLada.bestLapTime();
+        busIcarus.maxSpeed();
 
     }
 }
