@@ -6,11 +6,12 @@ public class Driver {
     protected int driverLicense;
     protected int drivingExperience;
 
-
-
-    public Driver(String fullName) {
+    public Driver(String fullName, int driverLicense, int drivingExperience) {
         this.fullName = fullName;
+        this.driverLicense = driverLicense;
+        this.drivingExperience = drivingExperience;
     }
+
 
     public void startMoving(){
         System.out.println( this  + " движется ");

@@ -1,18 +1,13 @@
-import transport.Car;
-import transport.Bus;
-import transport.Trucks;
-import transport.Driver;
-import transport.DriverC;
-import transport.DriverB;
-import transport.DriverD;
+import transport.*;
+
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
 
-        DriverB driverBob = new DriverB("Bob");
-        DriverC driverCharles  = new DriverC("Charles ");
-        DriverD driverDen = new DriverD("Den");
+        DriverB driverBob = new DriverB("Bob", 123456, 5 );
+        DriverC driverCharles  = new DriverC("Charles ", 456789, 10);
+        DriverD driverDen = new DriverD("Den",159487, 7);
 
         Car carLada = new Car("Lada", "Granta",  1.7f, driverBob);
         Car carAudi = new Car("Audi", "A8 50 L TDI quat",  3.0f, driverBob);
@@ -47,9 +42,11 @@ public class Main {
         trucksMaz.startMoving();
         busPaz.endMoving();         System.out.println();
 
+        Competitive.pitStop();
         carLada.bestLapTime();
         busIcarus.maxSpeed();       System.out.println();
 
+        driverBob.startMoving();
         driverDen.refuelCar();
         driverCharles.stopMoving();     System.out.println();
 

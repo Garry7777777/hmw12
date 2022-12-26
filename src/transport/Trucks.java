@@ -1,7 +1,6 @@
 package transport;
 
 public class Trucks extends Transport<DriverC> implements Competitive {
-
     public Trucks(String brand, String model, float engineVolume, DriverC driver) {
         super(brand, model, engineVolume, driver);
     }

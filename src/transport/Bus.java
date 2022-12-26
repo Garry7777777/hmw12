@@ -1,5 +1,4 @@
 package transport;
-
 public class Bus extends Transport<DriverD> implements Competitive{
 
     public Bus(String brand, String model, float engineVolume, DriverD driver) {
