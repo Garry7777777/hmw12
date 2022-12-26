@@ -1,10 +1,11 @@
 package transport;
 
 
-public class Car extends Transport implements Competitive{
+public class Car extends Transport<DriverB> implements Competitive{
 
-    public Car(String brand, String model, float engineVolume) {
-        super(brand, model, engineVolume);
+    public Car(String brand, String model, float engineVolume, DriverB driver) {
+        super(brand, model, engineVolume, driver);
+
     }
     @Override
     public void bestLapTime() {
@@ -17,6 +18,6 @@ public class Car extends Transport implements Competitive{
     }
     @Override
     public String toString() {
-        return "C марка:" + brand + " модель:" + model + " объем двигателя:" + engineVolume;
+        return "C марка:" + brand + " модель:" + model + " объем двигателя:" + engineVolume + " водитель:" + driver;
     }
 }
