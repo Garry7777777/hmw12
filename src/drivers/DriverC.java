@@ -1,5 +1,4 @@
-package transport;
-
+package drivers;
 public class DriverC extends Driver{
 
     public DriverC(String fullName, int driverLicense, int drivingExperience) {

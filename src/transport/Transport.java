@@ -1,5 +1,4 @@
 package transport;
-
 public abstract class Transport<T> implements Competitive{
     protected final String brand;
     protected final String model;

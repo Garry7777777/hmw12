@@ -1,7 +1,5 @@
-package transport;
-
+package drivers;
 public class Driver {
-
     protected String fullName;
     protected int driverLicense;
     protected int drivingExperience;

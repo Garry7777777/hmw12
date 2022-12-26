@@ -1,6 +1,7 @@
 package transport;
+import drivers.DriverC;
 
-public class Trucks extends Transport<DriverC> implements Competitive {
+public class Trucks extends Transport<DriverC> {
     public Trucks(String brand, String model, float engineVolume, DriverC driver) {
         super(brand, model, engineVolume, driver);
     }
@@ -14,7 +15,7 @@ public class Trucks extends Transport<DriverC> implements Competitive {
     }
     @Override
     public String toString() {
-        return "T марка:" + brand + " модель:" + model + " объем двигателя:" + engineVolume + " водитель:" + driver;
+        return "Truck марка:" + brand + " модель:" + model + " объем двигателя:" + engineVolume + " водитель:" + driver;
 
     }
 }
